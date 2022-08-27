@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import { Icon } from "@iconify/react";
-import angularIcon from "@iconify/icons-logos/angular-icon";
+//import csharpIcon from "@iconify/icons-simple-icons/csharp";
 import reactIcon from "@iconify/icons-logos/react";
 import vueIcon from "@iconify/icons-logos/vue";
+import pythonIcon from "@iconify/icons-logos/python";
 
 class About extends Component {
   render() {
     if (this.props.sharedBasicInfo) {
-      var profilepic = "images/" + this.props.sharedBasicInfo.image;
+      var profilepic = "https://avatars.githubusercontent.com/u/98183485?v=4";
     }
     if (this.props.resumeBasicInfo) {
       var sectionName = this.props.resumeBasicInfo.section_name.about;
@@ -29,17 +30,14 @@ class About extends Component {
                     height="250px"
                     src={profilepic}
                     alt="Avatar placeholder"
+                    style={{ borderRadius: "50px" }}
                   />
                   <Icon
-                    icon={angularIcon}
+                    icon={pythonIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                   <Icon
                     icon={reactIcon}
-                    style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
-                  />
-                  <Icon
-                    icon={vueIcon}
                     style={{ fontSize: "400%", margin: "9% 5% 0 5%" }}
                   />
                 </span>
